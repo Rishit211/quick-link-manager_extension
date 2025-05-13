@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quick Links Manager</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <h1>Quick Links</h1>
+
+  <div class="input-container">
+    <input type="text" id="link-name" placeholder="Link Name" />
+    <input type="text" id="link-url" placeholder="Link URL" />
+    <input type="text" id="link-category" placeholder="Category" />
+    <button id="add-link">Add Link</button>
+    <button id="save-current">Save Current Tab</button>
+  </div>
+
+  <div class="filter-container">
+    <input type="text" id="search" placeholder="Search..." />
+    <select id="category-filter">
+      <option value="">All Categories</option>
+    </select>
+  </div>
+
+  <div class="export-import-container">
+    <button id="export-json">Export JSON</button>
+    <input type="file" id="import-json" accept="application/json" />
+  </div>
+
+  <label class="toggle-container">
+    <input type="checkbox" id="dark-mode-toggle" />
+    <span class="toggle-label">Dark Mode</span>
+  </label>
+
+  <div id="links-list"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

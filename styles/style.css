@@ -1,0 +1,110 @@
+/* Base layout */
+body {
+  width: 340px;
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  padding: 15px;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Headings */
+h1 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Input & button containers */
+.input-container,
+.filter-container,
+.export-import-container {
+  margin-bottom: 16px;
+}
+
+input[type="text"],
+select,
+button,
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: #000;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+/* Links List */
+#links-list {
+  margin-top: 20px;
+}
+
+.link-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+}
+
+.link-item a {
+  color: #0066cc;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.link-item button {
+  margin-top: 5px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode button {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 1px solid #444;
+}
+
+body.dark-mode .link-item {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+body.dark-mode .link-item a {
+  color: #66ccff;
+}
+
+/* Dark Mode Toggle */
+label {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#dark-mode-toggle {
+  margin-right: 8px;
+}
